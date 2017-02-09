@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Questionnaire sur les fonctions de base d'Excel</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.101 / Opale 3.6.020">
+  <meta name="revision" content="2017-02-09 14:31">
+  <link rel="start" href="Excel_debutant.html" title="Excel&nbsp;: mise en forme, calculs et fonctions simples">
+  <meta name="author" content="J. Tissier ">
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"iyyhfq4x"};
+/*1*/ window.scLoadParams = {destUri:"/co/QuizzExcel1_1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin ref">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><script type="text/JavaScript">
+var vimKyIRjzal1OV3TD5ucqh_Aswitch = {
+
+	fId : "vimKyIRjzal1OV3TD5ucqh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_play"), "visible");
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_pending"), "collapsed");
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_results"), "collapsed");
+
+		break;
+	}
+
+	case "pending" : {
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_play"), "collapsed");
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_pending"), "visible");
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_results"), "collapsed");
+
+		break;
+	}
+
+	case "results" : {
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_play"), "collapsed");
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_pending"), "collapsed");
+scAssmntMgr.setMode(sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_N_results"), "visible");
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN4c : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "attempt"); 
+window.location.assign("QuizzExcel1_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN79 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+window.location.assign("QuizzExcel1_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN92 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+xipNPFSArMcRWw3PUuBkaj_Areset.fct_reset(); 
+window.location.assign("QuizzExcel1_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNc4 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+window.location.assign("QuizzExcel1_3.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNdd : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+xipNPFSArMcRWw3PUuBkaj_Areset.fct_reset(); 
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "attempt"); 
+window.location.assign("QuizzExcel1_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.vimKyIRjzal1OV3TD5ucqh_Aswitch_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+	case "pending" : {
+
+		break;
+	}
+
+	case "results" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") == "notAttempt" && true) return "play";
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") == "attempt" && true) return "pending";
+	return "results";
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("vimKyIRjzal1OV3TD5ucqh_Aswitch_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = vimKyIRjzal1OV3TD5ucqh_Aswitch;
+scOnUnloads[scOnUnloads.length] = vimKyIRjzal1OV3TD5ucqh_Aswitch;
+</script><div id="vimKyIRjzal1OV3TD5ucqh_Aswitch_A" style="display:none;"><div id="vimKyIRjzal1OV3TD5ucqh_Aswitch_N_play"><p>Vous allez &agrave; pr&eacute;sent effectuer une s&eacute;rie d'exercices d'auto-&eacute;valuation.</p><p>Une synth&egrave;se vous sera pr&eacute;sent&eacute;e &agrave; la fin de cette s&eacute;rie d'exercices.</p><p><a role="button" title="Commencer l'&eacute;valuation..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="vimKyIRjzal1OV3TD5ucqh_Aswitch.onActionN4c(this); return false;" class="btnStartE "><span>Commencer le test...</span></a></p></div><div id="vimKyIRjzal1OV3TD5ucqh_Aswitch_N_pending"><p>Vous avez d&eacute;j&agrave; commenc&eacute; ce test.</p><p> Vos r&eacute;ponses ont &eacute;t&eacute; conserv&eacute;es. Vous pouvez les revoir et poursuivre le test ou les effacer et recommencer le test.</p><p><a role="button" title="Reprendre le test..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="vimKyIRjzal1OV3TD5ucqh_Aswitch.onActionN79(this); return false;" class="btnStartE "><span>Reprendre le test...</span></a><a role="button" title="Effacer et recommencer le test..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="vimKyIRjzal1OV3TD5ucqh_Aswitch.onActionN92(this); return false;" class="btnRestartE "><span>Effacer et recommencer le test...</span></a></p></div><div id="vimKyIRjzal1OV3TD5ucqh_Aswitch_N_results"><p>Vous avez d&eacute;j&agrave; r&eacute;alis&eacute; ce test.</p><p> Vous pouvez de nouveau consulter vos r&eacute;sultats ou effacer vos r&eacute;ponses et recommencer le test.</p><p><a role="button" title="Afficher les r&eacute;sultats..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="vimKyIRjzal1OV3TD5ucqh_Aswitch.onActionNc4(this); return false;" class="btnScoreE "><span>Afficher les r&eacute;sultats...</span></a><a role="button" title="Effacer et recommencer le test..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="vimKyIRjzal1OV3TD5ucqh_Aswitch.onActionNdd(this); return false;" class="btnRestartE "><span>Effacer et recommencer le test...</span></a></p></div></div><script type="text/JavaScript">
+var xipNPFSArMcRWw3PUuBkaj_Areset = {
+
+	fId : "xipNPFSArMcRWw3PUuBkaj",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+y80t1p6067gwqiRsuhPGtc_AresetSub.fct_reset(); 
+l8hgxKt2VkjevCZ6GxdVNc_AresetSub.fct_reset(); 
+zgpBvwAWXPgMHShbFSSz2i_AresetSub.fct_reset(); 
+GBG4ZA8CFncCb2iWrOmNVd_AresetSub.fct_reset(); 
+qxzZRe7xt8dEjzESknhkLb_AresetSub.fct_reset(); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.xipNPFSArMcRWw3PUuBkaj_Areset_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("xipNPFSArMcRWw3PUuBkaj_Areset_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = xipNPFSArMcRWw3PUuBkaj_Areset;
+scOnUnloads[scOnUnloads.length] = xipNPFSArMcRWw3PUuBkaj_Areset;
+</script><div id="xipNPFSArMcRWw3PUuBkaj_Areset_A" style="display:none;"><script type="text/JavaScript">
+var y80t1p6067gwqiRsuhPGtc_AresetSub = {
+
+	fId : "y80t1p6067gwqiRsuhPGtc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.y80t1p6067gwqiRsuhPGtc_AresetSub_form;
+		for (var i=0; i < vForm.y80t1p6067gwqiRsuhPGtc_AresetSub_input.length; i++) {
+			vForm.y80t1p6067gwqiRsuhPGtc_AresetSub_input[i].disabled = false;
+			vForm.y80t1p6067gwqiRsuhPGtc_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("y80t1p6067gwqiRsuhPGtc_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.y80t1p6067gwqiRsuhPGtc_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.y80t1p6067gwqiRsuhPGtc_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("y80t1p6067gwqiRsuhPGtc_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = y80t1p6067gwqiRsuhPGtc_AresetSub;
+scOnUnloads[scOnUnloads.length] = y80t1p6067gwqiRsuhPGtc_AresetSub;
+</script><div id="y80t1p6067gwqiRsuhPGtc_AresetSub_A" style="display:none;"><form action name="y80t1p6067gwqiRsuhPGtc_AresetSub_form" id="y80t1p6067gwqiRsuhPGtc_AresetSub_form"><ul id="y80t1p6067gwqiRsuhPGtc_AresetSub_N_input"><li><div><input type="radio" name="y80t1p6067gwqiRsuhPGtc_AresetSub_input" id="y80t1p6067gwqiRsuhPGtc_AresetSub_in0" value="0" onclick="y80t1p6067gwqiRsuhPGtc_AresetSub.setResp(this, 0);" aria-labelledby="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl0"></div><div id="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl0"></div></li><li><div><input type="radio" name="y80t1p6067gwqiRsuhPGtc_AresetSub_input" id="y80t1p6067gwqiRsuhPGtc_AresetSub_in1" value="1" onclick="y80t1p6067gwqiRsuhPGtc_AresetSub.setResp(this, 1);" aria-labelledby="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl1"></div><div id="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl1"></div></li><li><div><input type="radio" name="y80t1p6067gwqiRsuhPGtc_AresetSub_input" id="y80t1p6067gwqiRsuhPGtc_AresetSub_in2" value="2" onclick="y80t1p6067gwqiRsuhPGtc_AresetSub.setResp(this, 2);" aria-labelledby="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl2"></div><div id="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl2"></div></li><li><div><input type="radio" name="y80t1p6067gwqiRsuhPGtc_AresetSub_input" id="y80t1p6067gwqiRsuhPGtc_AresetSub_in3" value="3" onclick="y80t1p6067gwqiRsuhPGtc_AresetSub.setResp(this, 3);" aria-labelledby="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl3"></div><div id="y80t1p6067gwqiRsuhPGtc_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var l8hgxKt2VkjevCZ6GxdVNc_AresetSub = {
+
+	fId : "l8hgxKt2VkjevCZ6GxdVNc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.l8hgxKt2VkjevCZ6GxdVNc_AresetSub_form;
+		for (var i=0; i < vForm.l8hgxKt2VkjevCZ6GxdVNc_AresetSub_input.length; i++) {
+			vForm.l8hgxKt2VkjevCZ6GxdVNc_AresetSub_input[i].disabled = false;
+			vForm.l8hgxKt2VkjevCZ6GxdVNc_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("l8hgxKt2VkjevCZ6GxdVNc_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.l8hgxKt2VkjevCZ6GxdVNc_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.l8hgxKt2VkjevCZ6GxdVNc_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("l8hgxKt2VkjevCZ6GxdVNc_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = l8hgxKt2VkjevCZ6GxdVNc_AresetSub;
+scOnUnloads[scOnUnloads.length] = l8hgxKt2VkjevCZ6GxdVNc_AresetSub;
+</script><div id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_A" style="display:none;"><form action name="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_form" id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_form"><ul id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_N_input"><li><div><input type="radio" name="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_input" id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_in0" value="0" onclick="l8hgxKt2VkjevCZ6GxdVNc_AresetSub.setResp(this, 0);" aria-labelledby="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_lbl0"></div><div id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_lbl0"></div></li><li><div><input type="radio" name="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_input" id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_in1" value="1" onclick="l8hgxKt2VkjevCZ6GxdVNc_AresetSub.setResp(this, 1);" aria-labelledby="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_lbl1"></div><div id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_lbl1"></div></li><li><div><input type="radio" name="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_input" id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_in2" value="2" onclick="l8hgxKt2VkjevCZ6GxdVNc_AresetSub.setResp(this, 2);" aria-labelledby="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_lbl2"></div><div id="l8hgxKt2VkjevCZ6GxdVNc_AresetSub_lbl2"></div></li></ul></form></div><script type="text/JavaScript">
+var zgpBvwAWXPgMHShbFSSz2i_AresetSub = {
+
+	fId : "zgpBvwAWXPgMHShbFSSz2i",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.zgpBvwAWXPgMHShbFSSz2i_AresetSub_form;
+		for (var i=0; i < vForm.zgpBvwAWXPgMHShbFSSz2i_AresetSub_input.length; i++) {
+			vForm.zgpBvwAWXPgMHShbFSSz2i_AresetSub_input[i].disabled = false;
+			vForm.zgpBvwAWXPgMHShbFSSz2i_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("zgpBvwAWXPgMHShbFSSz2i_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.zgpBvwAWXPgMHShbFSSz2i_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.zgpBvwAWXPgMHShbFSSz2i_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("zgpBvwAWXPgMHShbFSSz2i_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = zgpBvwAWXPgMHShbFSSz2i_AresetSub;
+scOnUnloads[scOnUnloads.length] = zgpBvwAWXPgMHShbFSSz2i_AresetSub;
+</script><div id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_A" style="display:none;"><form action name="zgpBvwAWXPgMHShbFSSz2i_AresetSub_form" id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_form"><ul id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_N_input"><li><div><input type="radio" name="zgpBvwAWXPgMHShbFSSz2i_AresetSub_input" id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_in0" value="0" onclick="zgpBvwAWXPgMHShbFSSz2i_AresetSub.setResp(this, 0);" aria-labelledby="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl0"></div><div id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl0"></div></li><li><div><input type="radio" name="zgpBvwAWXPgMHShbFSSz2i_AresetSub_input" id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_in1" value="1" onclick="zgpBvwAWXPgMHShbFSSz2i_AresetSub.setResp(this, 1);" aria-labelledby="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl1"></div><div id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl1"></div></li><li><div><input type="radio" name="zgpBvwAWXPgMHShbFSSz2i_AresetSub_input" id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_in2" value="2" onclick="zgpBvwAWXPgMHShbFSSz2i_AresetSub.setResp(this, 2);" aria-labelledby="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl2"></div><div id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl2"></div></li><li><div><input type="radio" name="zgpBvwAWXPgMHShbFSSz2i_AresetSub_input" id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_in3" value="3" onclick="zgpBvwAWXPgMHShbFSSz2i_AresetSub.setResp(this, 3);" aria-labelledby="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl3"></div><div id="zgpBvwAWXPgMHShbFSSz2i_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var GBG4ZA8CFncCb2iWrOmNVd_AresetSub = {
+
+	fId : "GBG4ZA8CFncCb2iWrOmNVd",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.GBG4ZA8CFncCb2iWrOmNVd_AresetSub_form;
+		for (var i=0; i < vForm.GBG4ZA8CFncCb2iWrOmNVd_AresetSub_input.length; i++) {
+			vForm.GBG4ZA8CFncCb2iWrOmNVd_AresetSub_input[i].disabled = false;
+			vForm.GBG4ZA8CFncCb2iWrOmNVd_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("GBG4ZA8CFncCb2iWrOmNVd_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.GBG4ZA8CFncCb2iWrOmNVd_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.GBG4ZA8CFncCb2iWrOmNVd_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("GBG4ZA8CFncCb2iWrOmNVd_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = GBG4ZA8CFncCb2iWrOmNVd_AresetSub;
+scOnUnloads[scOnUnloads.length] = GBG4ZA8CFncCb2iWrOmNVd_AresetSub;
+</script><div id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_A" style="display:none;"><form action name="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_form" id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_form"><ul id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_N_input"><li><div><input type="radio" name="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_input" id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_in0" value="0" onclick="GBG4ZA8CFncCb2iWrOmNVd_AresetSub.setResp(this, 0);" aria-labelledby="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_lbl0"></div><div id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_lbl0"></div></li><li><div><input type="radio" name="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_input" id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_in1" value="1" onclick="GBG4ZA8CFncCb2iWrOmNVd_AresetSub.setResp(this, 1);" aria-labelledby="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_lbl1"></div><div id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_lbl1"></div></li><li><div><input type="radio" name="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_input" id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_in2" value="2" onclick="GBG4ZA8CFncCb2iWrOmNVd_AresetSub.setResp(this, 2);" aria-labelledby="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_lbl2"></div><div id="GBG4ZA8CFncCb2iWrOmNVd_AresetSub_lbl2"></div></li></ul></form></div><script type="text/JavaScript">
+var qxzZRe7xt8dEjzESknhkLb_AresetSub = {
+
+	fId : "qxzZRe7xt8dEjzESknhkLb",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.qxzZRe7xt8dEjzESknhkLb_AresetSub_form;
+		for (var i=0; i < vForm.qxzZRe7xt8dEjzESknhkLb_AresetSub_input.length; i++) {
+			vForm.qxzZRe7xt8dEjzESknhkLb_AresetSub_input[i].disabled = false;
+			vForm.qxzZRe7xt8dEjzESknhkLb_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("qxzZRe7xt8dEjzESknhkLb_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.qxzZRe7xt8dEjzESknhkLb_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.qxzZRe7xt8dEjzESknhkLb_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("qxzZRe7xt8dEjzESknhkLb_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = qxzZRe7xt8dEjzESknhkLb_AresetSub;
+scOnUnloads[scOnUnloads.length] = qxzZRe7xt8dEjzESknhkLb_AresetSub;
+</script><div id="qxzZRe7xt8dEjzESknhkLb_AresetSub_A" style="display:none;"><form action name="qxzZRe7xt8dEjzESknhkLb_AresetSub_form" id="qxzZRe7xt8dEjzESknhkLb_AresetSub_form"><ul id="qxzZRe7xt8dEjzESknhkLb_AresetSub_N_input"><li><div><input type="radio" name="qxzZRe7xt8dEjzESknhkLb_AresetSub_input" id="qxzZRe7xt8dEjzESknhkLb_AresetSub_in0" value="0" onclick="qxzZRe7xt8dEjzESknhkLb_AresetSub.setResp(this, 0);" aria-labelledby="qxzZRe7xt8dEjzESknhkLb_AresetSub_lbl0"></div><div id="qxzZRe7xt8dEjzESknhkLb_AresetSub_lbl0"></div></li><li><div><input type="radio" name="qxzZRe7xt8dEjzESknhkLb_AresetSub_input" id="qxzZRe7xt8dEjzESknhkLb_AresetSub_in1" value="1" onclick="qxzZRe7xt8dEjzESknhkLb_AresetSub.setResp(this, 1);" aria-labelledby="qxzZRe7xt8dEjzESknhkLb_AresetSub_lbl1"></div><div id="qxzZRe7xt8dEjzESknhkLb_AresetSub_lbl1"></div></li><li><div><input type="radio" name="qxzZRe7xt8dEjzESknhkLb_AresetSub_input" id="qxzZRe7xt8dEjzESknhkLb_AresetSub_in2" value="2" onclick="qxzZRe7xt8dEjzESknhkLb_AresetSub.setResp(this, 2);" aria-labelledby="qxzZRe7xt8dEjzESknhkLb_AresetSub_lbl2"></div><div id="qxzZRe7xt8dEjzESknhkLb_AresetSub_lbl2"></div></li></ul></form></div></div></div></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer");scImgMgr.init();</script>
+ </body>
+</html>
